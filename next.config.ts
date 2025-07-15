@@ -1,9 +1,10 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  output: 'standalone',
   // 启用服务器组件
   serverExternalPackages: [],
-
+  
   // 图片优化配置
   images: {
     formats: ['image/webp', 'image/avif'],
