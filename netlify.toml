@@ -1,0 +1,15 @@
+# netlify.toml
+
+[build]
+  # 构建命令，无需更改
+  command = "next build"
+
+  # 发布目录。这是最容易出错的地方。
+  # 必须设置为 ".next"。Netlify 的 Next.js 插件会自动处理 standalone 的输出。
+  # 不要设置为 ".next/standalone" 或 "out"。
+  publish = ".next"
+
+[[plugins]]
+  # 确保声明并使用了 Netlify 的官方 Next.js 插件。
+  # 它负责处理 SSR、ISR、API 路由、App Router 等所有动态功能。
+  package = "@netlify/plugin-nextjs"

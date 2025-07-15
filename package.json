@@ -13,11 +13,12 @@
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.1",
+    "@netlify/plugin-nextjs": "^5.11.6",
     "@next/bundle-analyzer": "^15.4.1",
     "clsx": "^2.1.0",
+    "next": "15.4.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
